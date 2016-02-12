@@ -1,5 +1,7 @@
 # supreme-system
 
+> Today compliments of Tyler B. we are going to dive into the wonderful world of webapplication development so everyone can get their WebDev badge! This will likely be a theme of development as we explore the concept of building webapplications. 
+
 1. Create a heroku account.
 2. Create a git repo.
 3. Add `requirements.txt`
