@@ -1,0 +1,214 @@
+2016-03-13 05:02:03,550 INFO: microblog startup [in /Users/mschober/Documents/git/dojo/supreme-system/app/__init__.py:20]
+2016-03-13 05:03:06,853 INFO: microblog startup [in /Users/mschober/Documents/git/dojo/supreme-system/app/__init__.py:20]
+2016-03-13 05:03:19,020 INFO: microblog startup [in /Users/mschober/Documents/git/dojo/supreme-system/app/__init__.py:20]
+2016-03-13 05:04:19,111 INFO: microblog startup [in /Users/mschober/Documents/git/dojo/supreme-system/app/__init__.py:20]
+2016-03-13 05:04:31,157 INFO: microblog startup [in /Users/mschober/Documents/git/dojo/supreme-system/app/__init__.py:20]
+2016-03-13 05:04:48,787 INFO: microblog startup [in /Users/mschober/Documents/git/dojo/supreme-system/app/__init__.py:20]
+2016-03-13 05:10:19,830 INFO: microblog startup [in /Users/mschober/Documents/git/dojo/supreme-system/app/__init__.py:20]
+2016-03-13 05:10:43,880 INFO: microblog startup [in /Users/mschober/Documents/git/dojo/supreme-system/app/__init__.py:20]
+2016-03-13 05:10:52,360 INFO: microblog startup [in /Users/mschober/Documents/git/dojo/supreme-system/app/__init__.py:20]
+2016-03-13 05:10:57,259 ERROR: Exception on /post/username/mschober/activity/asdf [POST] [in /Users/mschober/Documents/git/dojo/microblog/env/lib/python2.7/site-packages/flask/app.py:1423]
+Traceback (most recent call last):
+  File "/Users/mschober/Documents/git/dojo/microblog/env/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/mschober/Documents/git/dojo/microblog/env/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/mschober/Documents/git/dojo/microblog/env/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/mschober/Documents/git/dojo/microblog/env/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/mschober/Documents/git/dojo/microblog/env/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/mschober/Documents/git/dojo/supreme-system/app/views.py", line 12, in show_post
+    post = Post(body=activity, timestamp=datetime.utcnow(), author=uname, language=language)
+NameError: global name 'Post' is not defined
+2016-03-13 05:11:33,390 INFO: microblog startup [in /Users/mschober/Documents/git/dojo/supreme-system/app/__init__.py:20]
+2016-03-13 05:11:39,164 ERROR: Exception on /post/username/mschober/activity/asdf [POST] [in /Users/mschober/Documents/git/dojo/microblog/env/lib/python2.7/site-packages/flask/app.py:1423]
+Traceback (most recent call last):
+  File "/Users/mschober/Documents/git/dojo/microblog/env/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/mschober/Documents/git/dojo/microblog/env/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/mschober/Documents/git/dojo/microblog/env/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/mschober/Documents/git/dojo/microblog/env/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/mschober/Documents/git/dojo/microblog/env/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/mschober/Documents/git/dojo/supreme-system/app/views.py", line 12, in show_post
+    post = Post(body=activity, timestamp=datetime.utcnow(), author=uname, language=language)
+AttributeError: 'module' object has no attribute 'utcnow'
+2016-03-13 05:12:14,152 INFO: microblog startup [in /Users/mschober/Documents/git/dojo/supreme-system/app/__init__.py:20]
+2016-03-13 05:12:15,781 ERROR: Exception on /post/username/mschober/activity/asdf [POST] [in /Users/mschober/Documents/git/dojo/microblog/env/lib/python2.7/site-packages/flask/app.py:1423]
+Traceback (most recent call last):
+  File "/Users/mschober/Documents/git/dojo/microblog/env/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/mschober/Documents/git/dojo/microblog/env/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/mschober/Documents/git/dojo/microblog/env/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/mschober/Documents/git/dojo/microblog/env/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/mschober/Documents/git/dojo/microblog/env/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/mschober/Documents/git/dojo/supreme-system/app/views.py", line 12, in show_post
+    post = Post(body=activity, timestamp=datetime.utcnow(), author=uname, language=language)
+  File "<string>", line 4, in __init__
+  File "/Users/mschober/Documents/git/dojo/microblog/env/lib/python2.7/site-packages/sqlalchemy/orm/state.py", line 260, in _initialize_instance
+    return manager.original_init(*mixed[1:], **kwargs)
+  File "/Users/mschober/Documents/git/dojo/microblog/env/lib/python2.7/site-packages/sqlalchemy/ext/declarative/base.py", line 526, in _declarative_constructor
+    setattr(self, k, kwargs[k])
+  File "/Users/mschober/Documents/git/dojo/microblog/env/lib/python2.7/site-packages/sqlalchemy/orm/attributes.py", line 226, in __set__
+    instance_dict(instance), value, None)
+  File "/Users/mschober/Documents/git/dojo/microblog/env/lib/python2.7/site-packages/sqlalchemy/orm/attributes.py", line 812, in set
+    value = self.fire_replace_event(state, dict_, value, old, initiator)
+  File "/Users/mschober/Documents/git/dojo/microblog/env/lib/python2.7/site-packages/sqlalchemy/orm/attributes.py", line 832, in fire_replace_event
+    state, value, previous, initiator or self._replace_token)
+  File "/Users/mschober/Documents/git/dojo/microblog/env/lib/python2.7/site-packages/sqlalchemy/orm/attributes.py", line 1135, in emit_backref_from_scalar_set_event
+    child_state, child_dict = instance_state(child),\
+AttributeError: 'unicode' object has no attribute '_sa_instance_state'
+2016-03-13 05:14:12,154 INFO: microblog startup [in /Users/mschober/Documents/git/dojo/supreme-system/app/__init__.py:20]
+2016-03-13 05:14:13,988 ERROR: Exception on /post/username/mschober/activity/asdf [POST] [in /Users/mschober/Documents/git/dojo/microblog/env/lib/python2.7/site-packages/flask/app.py:1423]
+Traceback (most recent call last):
+  File "/Users/mschober/Documents/git/dojo/microblog/env/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/mschober/Documents/git/dojo/microblog/env/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/mschober/Documents/git/dojo/microblog/env/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/mschober/Documents/git/dojo/microblog/env/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/mschober/Documents/git/dojo/microblog/env/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/mschober/Documents/git/dojo/supreme-system/app/views.py", line 12, in show_post
+    post = Post(body=activity, timestamp=datetime.utcnow(), author=uname, language=language)
+  File "<string>", line 2, in __init__
+  File "/Users/mschober/Documents/git/dojo/microblog/env/lib/python2.7/site-packages/sqlalchemy/orm/instrumentation.py", line 324, in _new_state_if_none
+    state = self._state_constructor(instance, self)
+  File "/Users/mschober/Documents/git/dojo/microblog/env/lib/python2.7/site-packages/sqlalchemy/util/langhelpers.py", line 725, in __get__
+    obj.__dict__[self.__name__] = result = self.fget(obj)
+  File "/Users/mschober/Documents/git/dojo/microblog/env/lib/python2.7/site-packages/sqlalchemy/orm/instrumentation.py", line 158, in _state_constructor
+    self.dispatch.first_init(self, self.class_)
+  File "/Users/mschober/Documents/git/dojo/microblog/env/lib/python2.7/site-packages/sqlalchemy/event/attr.py", line 260, in __call__
+    fn(*args, **kw)
+  File "/Users/mschober/Documents/git/dojo/microblog/env/lib/python2.7/site-packages/sqlalchemy/orm/mapper.py", line 2687, in _event_on_first_init
+    configure_mappers()
+  File "/Users/mschober/Documents/git/dojo/microblog/env/lib/python2.7/site-packages/sqlalchemy/orm/mapper.py", line 2583, in configure_mappers
+    mapper._post_configure_properties()
+  File "/Users/mschober/Documents/git/dojo/microblog/env/lib/python2.7/site-packages/sqlalchemy/orm/mapper.py", line 1688, in _post_configure_properties
+    prop.init()
+  File "/Users/mschober/Documents/git/dojo/microblog/env/lib/python2.7/site-packages/sqlalchemy/orm/interfaces.py", line 144, in init
+    self.do_init()
+  File "/Users/mschober/Documents/git/dojo/microblog/env/lib/python2.7/site-packages/sqlalchemy/orm/relationships.py", line 1550, in do_init
+    self._setup_join_conditions()
+  File "/Users/mschober/Documents/git/dojo/microblog/env/lib/python2.7/site-packages/sqlalchemy/orm/relationships.py", line 1624, in _setup_join_conditions
+    can_be_synced_fn=self._columns_are_mapped
+  File "/Users/mschober/Documents/git/dojo/microblog/env/lib/python2.7/site-packages/sqlalchemy/orm/relationships.py", line 1892, in __init__
+    self._determine_joins()
+  File "/Users/mschober/Documents/git/dojo/microblog/env/lib/python2.7/site-packages/sqlalchemy/orm/relationships.py", line 1996, in _determine_joins
+    "specify a 'primaryjoin' expression." % self.prop)
+NoForeignKeysError: Could not determine join condition between parent/child tables on relationship User.posts - there are no foreign keys linking these tables.  Ensure that referencing columns are associated with a ForeignKey or ForeignKeyConstraint, or specify a 'primaryjoin' expression.
+2016-03-13 05:15:11,793 INFO: microblog startup [in /Users/mschober/Documents/git/dojo/supreme-system/app/__init__.py:20]
+2016-03-13 05:15:13,507 ERROR: Exception on /post/username/mschober/activity/asdf [POST] [in /Users/mschober/Documents/git/dojo/microblog/env/lib/python2.7/site-packages/flask/app.py:1423]
+Traceback (most recent call last):
+  File "/Users/mschober/Documents/git/dojo/microblog/env/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/mschober/Documents/git/dojo/microblog/env/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/mschober/Documents/git/dojo/microblog/env/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/mschober/Documents/git/dojo/microblog/env/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/mschober/Documents/git/dojo/microblog/env/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/mschober/Documents/git/dojo/supreme-system/app/views.py", line 12, in show_post
+    post = Post(body=activity, timestamp=datetime.utcnow(), author=uname, language=language)
+  File "<string>", line 4, in __init__
+  File "/Users/mschober/Documents/git/dojo/microblog/env/lib/python2.7/site-packages/sqlalchemy/orm/state.py", line 260, in _initialize_instance
+    return manager.original_init(*mixed[1:], **kwargs)
+  File "/Users/mschober/Documents/git/dojo/microblog/env/lib/python2.7/site-packages/sqlalchemy/ext/declarative/base.py", line 525, in _declarative_constructor
+    (k, cls_.__name__))
+TypeError: 'language' is an invalid keyword argument for Post
+2016-03-13 05:15:27,975 INFO: microblog startup [in /Users/mschober/Documents/git/dojo/supreme-system/app/__init__.py:20]
+2016-03-13 05:15:30,488 ERROR: Exception on /post/username/mschober/activity/asdf [POST] [in /Users/mschober/Documents/git/dojo/microblog/env/lib/python2.7/site-packages/flask/app.py:1423]
+Traceback (most recent call last):
+  File "/Users/mschober/Documents/git/dojo/microblog/env/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/mschober/Documents/git/dojo/microblog/env/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/mschober/Documents/git/dojo/microblog/env/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/mschober/Documents/git/dojo/microblog/env/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/mschober/Documents/git/dojo/microblog/env/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/mschober/Documents/git/dojo/supreme-system/app/views.py", line 12, in show_post
+    post = Post(body=activity, timestamp=datetime.utcnow(), author=uname)
+  File "<string>", line 4, in __init__
+  File "/Users/mschober/Documents/git/dojo/microblog/env/lib/python2.7/site-packages/sqlalchemy/orm/state.py", line 260, in _initialize_instance
+    return manager.original_init(*mixed[1:], **kwargs)
+  File "/Users/mschober/Documents/git/dojo/microblog/env/lib/python2.7/site-packages/sqlalchemy/ext/declarative/base.py", line 525, in _declarative_constructor
+    (k, cls_.__name__))
+TypeError: 'author' is an invalid keyword argument for Post
+2016-03-13 05:15:45,577 INFO: microblog startup [in /Users/mschober/Documents/git/dojo/supreme-system/app/__init__.py:20]
+2016-03-13 05:15:47,870 ERROR: Exception on /post/username/mschober/activity/asdf [POST] [in /Users/mschober/Documents/git/dojo/microblog/env/lib/python2.7/site-packages/flask/app.py:1423]
+Traceback (most recent call last):
+  File "/Users/mschober/Documents/git/dojo/microblog/env/lib/python2.7/site-packages/flask/app.py", line 1817, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/mschober/Documents/git/dojo/microblog/env/lib/python2.7/site-packages/flask/app.py", line 1477, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/mschober/Documents/git/dojo/microblog/env/lib/python2.7/site-packages/flask/app.py", line 1381, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/mschober/Documents/git/dojo/microblog/env/lib/python2.7/site-packages/flask/app.py", line 1475, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/mschober/Documents/git/dojo/microblog/env/lib/python2.7/site-packages/flask/app.py", line 1461, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/mschober/Documents/git/dojo/supreme-system/app/views.py", line 14, in show_post
+    db.session.commit()
+  File "/Users/mschober/Documents/git/dojo/microblog/env/lib/python2.7/site-packages/sqlalchemy/orm/scoping.py", line 150, in do
+    return getattr(self.registry(), name)(*args, **kwargs)
+  File "/Users/mschober/Documents/git/dojo/microblog/env/lib/python2.7/site-packages/sqlalchemy/orm/session.py", line 776, in commit
+    self.transaction.commit()
+  File "/Users/mschober/Documents/git/dojo/microblog/env/lib/python2.7/site-packages/sqlalchemy/orm/session.py", line 377, in commit
+    self._prepare_impl()
+  File "/Users/mschober/Documents/git/dojo/microblog/env/lib/python2.7/site-packages/sqlalchemy/orm/session.py", line 357, in _prepare_impl
+    self.session.flush()
+  File "/Users/mschober/Documents/git/dojo/microblog/env/lib/python2.7/site-packages/sqlalchemy/orm/session.py", line 1919, in flush
+    self._flush(objects)
+  File "/Users/mschober/Documents/git/dojo/microblog/env/lib/python2.7/site-packages/sqlalchemy/orm/session.py", line 2037, in _flush
+    transaction.rollback(_capture_exception=True)
+  File "/Users/mschober/Documents/git/dojo/microblog/env/lib/python2.7/site-packages/sqlalchemy/util/langhelpers.py", line 60, in __exit__
+    compat.reraise(exc_type, exc_value, exc_tb)
+  File "/Users/mschober/Documents/git/dojo/microblog/env/lib/python2.7/site-packages/sqlalchemy/orm/session.py", line 2001, in _flush
+    flush_context.execute()
+  File "/Users/mschober/Documents/git/dojo/microblog/env/lib/python2.7/site-packages/sqlalchemy/orm/unitofwork.py", line 372, in execute
+    rec.execute(self)
+  File "/Users/mschober/Documents/git/dojo/microblog/env/lib/python2.7/site-packages/sqlalchemy/orm/unitofwork.py", line 526, in execute
+    uow
+  File "/Users/mschober/Documents/git/dojo/microblog/env/lib/python2.7/site-packages/sqlalchemy/orm/persistence.py", line 65, in save_obj
+    mapper, table, insert)
+  File "/Users/mschober/Documents/git/dojo/microblog/env/lib/python2.7/site-packages/sqlalchemy/orm/persistence.py", line 602, in _emit_insert_statements
+    execute(statement, params)
+  File "/Users/mschober/Documents/git/dojo/microblog/env/lib/python2.7/site-packages/sqlalchemy/engine/base.py", line 729, in execute
+    return meth(self, multiparams, params)
+  File "/Users/mschober/Documents/git/dojo/microblog/env/lib/python2.7/site-packages/sqlalchemy/sql/elements.py", line 321, in _execute_on_connection
+    return connection._execute_clauseelement(self, multiparams, params)
+  File "/Users/mschober/Documents/git/dojo/microblog/env/lib/python2.7/site-packages/sqlalchemy/engine/base.py", line 826, in _execute_clauseelement
+    compiled_sql, distilled_params
+  File "/Users/mschober/Documents/git/dojo/microblog/env/lib/python2.7/site-packages/sqlalchemy/engine/base.py", line 958, in _execute_context
+    context)
+  File "/Users/mschober/Documents/git/dojo/microblog/env/lib/python2.7/site-packages/sqlalchemy/engine/base.py", line 1160, in _handle_dbapi_exception
+    exc_info
+  File "/Users/mschober/Documents/git/dojo/microblog/env/lib/python2.7/site-packages/sqlalchemy/util/compat.py", line 199, in raise_from_cause
+    reraise(type(exception), exception, tb=exc_tb)
+  File "/Users/mschober/Documents/git/dojo/microblog/env/lib/python2.7/site-packages/sqlalchemy/engine/base.py", line 951, in _execute_context
+    context)
+  File "/Users/mschober/Documents/git/dojo/microblog/env/lib/python2.7/site-packages/sqlalchemy/engine/default.py", line 436, in do_execute
+    cursor.execute(statement, parameters)
+OperationalError: (OperationalError) no such table: post u'INSERT INTO post (body, timestamp, author) VALUES (?, ?, ?)' (u'asdf', '2016-03-13 12:15:47.841669', u'mschober')
+2016-03-13 05:15:59,307 INFO: microblog startup [in /Users/mschober/Documents/git/dojo/supreme-system/app/__init__.py:20]
+2016-03-13 05:16:02,796 INFO: microblog startup [in /Users/mschober/Documents/git/dojo/supreme-system/app/__init__.py:20]
+2016-03-13 05:16:05,664 INFO: microblog startup [in /Users/mschober/Documents/git/dojo/supreme-system/app/__init__.py:20]
+2016-03-13 05:16:08,639 INFO: microblog startup [in /Users/mschober/Documents/git/dojo/supreme-system/app/__init__.py:20]
+2016-03-13 05:16:11,180 INFO: microblog startup [in /Users/mschober/Documents/git/dojo/supreme-system/app/__init__.py:20]
+2016-03-13 05:23:21,002 INFO: microblog startup [in /Users/mschober/Documents/git/dojo/supreme-system/app/__init__.py:20]

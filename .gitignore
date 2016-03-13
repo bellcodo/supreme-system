@@ -6,4 +6,3 @@ flask
 *.mo
 env
 versions/
-tmp/
