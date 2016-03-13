@@ -6,10 +6,10 @@ app = Flask(__name__)
 def hello():
     return "Hello World!"
 
-@app.route('/post/username/<string:uname>/activity/<string:activity>')
-def show_post(post_id):
+@app.route('/post/username/<uname>/activity/<activity>', methods=['POST'])
+def show_post(uname, activity):
     # show the post with the given id, the id is an integer
-    return 'Post %d' % post_id
+    return 'Uname %s activty %s' %( uname, activity )
 
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))
