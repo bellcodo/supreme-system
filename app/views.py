@@ -6,7 +6,7 @@ from datetime import datetime
 def hello():
     return "Hello World!"
 
-@app.route('/post/username/<uname>/activity/<activity>', methods=['POST'])
+@app.route('/post/username/<uname>/activity/<activity>', methods=['GET'])
 def show_post(uname, activity):
     language = ''
     post = Post(body=activity, timestamp=datetime.utcnow(), author=uname)
