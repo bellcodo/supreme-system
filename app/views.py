@@ -1,16 +1,15 @@
-def index():
-    user = {'nickname': 'Miguel'}  # fake user
-    posts = [  # fake array of posts
-        { 
-            'author': {'nickname': 'John'}, 
-            'body': 'Beautiful day in Portland!' 
-        },
-        { 
-            'author': {'nickname': 'Susan'}, 
-            'body': 'The Avengers movie was so cool!' 
-        }
-    ]
-    return render_template("index.html",
-                           title='Home',
-                           user=user,
-                           posts=posts)
+from app import app, db
+from .models import Post
+from datetime import datetime
+
+@app.route("/")
+def hello():
+    return "Hello World!"
+
+@app.route('/post/username/<uname>/activity/<activity>', methods=['POST'])
+def show_post(uname, activity):
+    language = ''
+    post = Post(body=activity, timestamp=datetime.utcnow(), author=uname)
+    db.session.add(post)
+    db.session.commit()
+    return 'Uname %s activty %s' %( uname, activity )
